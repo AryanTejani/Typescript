@@ -43,4 +43,25 @@ console.log(exampleTypenarrowing("hey there"));
 console.log(exampleTypenarrowing(4));
 
 // Intersection types
+console.log("---------------------\nIntersection Type Narrowing\n-------------------");
 
+type Employee = {
+    name:string,
+    id:number
+}
+
+type manager = {
+    department : string,
+    role:string
+}
+
+type MwithE = Employee & manager;
+
+const ManagerWithEmployee : MwithE = {
+    name:'Aryan',
+    id:1,
+    department:'CS',
+    role:'Intern'
+}
+
+console.log(ManagerWithEmployee.name);
