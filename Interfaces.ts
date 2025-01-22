@@ -6,13 +6,20 @@ interface Computer {
   hdd: number;
 }
 
-const computerExample: Computer = {
-  name: "Lenovo",
-  ram: 4,
-  hdd: 256,
-};
+const computerExample: Computer[] = [
+  {
+    name: "Lenovo",
+    ram: 4,
+    hdd: 256,
+  },
+  {
+    name: "Dell",
+    ram: 4,
+    hdd: 512,
+  },
+];
 
-console.log(computerExample.name);
+console.log(computerExample[1].name);
 
 // Interfaces with classes
 
